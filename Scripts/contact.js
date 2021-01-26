@@ -6,6 +6,8 @@ class Contact
     this.m_fullName = fullName;
     this.m_contactNumber = contactNumber;
     this.m_emailAddress = emailAddress;
+
+    this.splitFullName();
   }
 
   // Getters and Setters
@@ -37,5 +39,13 @@ class Contact
   set emailAddress(email_address) 
   {
     this.m_emailAddress = email_address;
+  }
+
+  // functions
+  splitFullName()
+  {
+    let names = this.fullName.split(" ")
+    this.firstName = names[0];
+    this.lastName = names[1];
   }
 }
