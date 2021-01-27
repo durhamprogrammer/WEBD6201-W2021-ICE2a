@@ -48,4 +48,13 @@ class Contact
     this.firstName = names[0];
     this.lastName = names[1];
   }
+
+  toString()
+  {
+    let contactString = `Full Name     : ${this.fullName}
+Contact Number: ${this.contactNumber}
+Email Address : ${this.emailAddress}`;
+
+    return contactString; 
+  }
 }
